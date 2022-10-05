@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title here</title>
+
+	<!--   Cascading Style Sheets-->
+	<!-- <link rel="stylesheet" href="css/style.css">  -->
+	<link rel="stylesheet" href="./local/templates/lka/css/style.min.css">
+	<noscript>
+		<style>
+			.content-wrapper {
+				overflow: auto;
+			}
+		</style>
+	</noscript>
+</head>
+
+<body class="rggu-hall">
+	<div class="inner">
+		<div class="left-col">
+			<h1>Добро пожаловать на портал РГГУ!</h1>
+			<p>Вход в систему доступен только для зарегистрированных пользователей.</p>
+			<p>По всем вопросам работы портала обращайтесь в <a href="#">службу поддержки пользователей</a>.</p>
+			<p>По вопросам доступа к личному кабинету обращаться по адресу:</p>
+			<p><b>м. Новослободская ул. Чаянова д.15 Миусская площадь д.6 </b></p>
+			<a href="reg.html" class="btn">Активировать профиль</a>
+		</div>
+		<div class="right-col">
+			<form  class="form hall-form">
+				<div class="hall-form__logo-box">
+					<img src="./local/templates/lka/img/rggu-big-logo.svg" alt="Российский государственный гуманитарный университет" class="hall-form__logo">
+				</div> 
+				<fieldset>
+					<legend>
+						Форма авторизации
+					</legend>
+					<!-- что бы было видно сообщение о ошибке, нужно поставить класс form__error-message--show -->
+					<div class="form__error-message ">
+						Неправильно введен логин или пароль
+					</div>
+					<label class="form-elem"> 
+						<input type="text" name="login" class="form-elem__input" placeholder="Логин">
+						<span>Логин<sup>*</sup></span>
+					</label>
+					<div class="password-field-container">
+						<label class="form-elem"> 
+							<input type="password" name="login" class="form-elem__input form-elem__input--password" placeholder="Логин">
+							<span>Пароль<sup>*</sup></span> 
+						</label>
+						<label class="passowrd-eye">
+							<input type="checkbox" name="show-password">
+							<span>Показать или скрыть пароль</span>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 20L20.1283 4.37931" stroke-width="1.5"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.1615 12.0531C15.1615 13.7991 13.7455 15.2141 11.9995 15.2141C10.2535 15.2141 8.8385 13.7991 8.8385 12.0531C8.8385 10.3061 10.2535 8.89111 11.9995 8.89111C13.7455 8.89111 15.1615 10.3061 15.1615 12.0531Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M11.998 19.355C15.806 19.355 19.289 16.617 21.25 12.053C19.289 7.48898 15.806 4.75098 11.998 4.75098H12.002C8.194 4.75098 4.711 7.48898 2.75 12.053C4.711 16.617 8.194 19.355 12.002 19.355H11.998Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg> 
+						</label>
+					</div>
+					<button type="submit" class="btn btn--orange upp">Войти</button>
+					<a href="reg.html" class="btn btn--dashed">Забыли пароль?</a> 
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+	<!-- ++++++++++JavaScript++++++++++-->
+	<!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
+	<!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
+	<script src="./local/templates/lka/js/script.js"></script>
+	<!-- ++++++++++JavaScript end++++++++++-->
+</body>
+
+</html>

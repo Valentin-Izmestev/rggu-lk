@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<title>Title here</title> 
+   
+<!--   Cascading Style Sheets--> 
+    <!-- <link rel="stylesheet" href="css/style.css">  -->
+    <link rel="stylesheet" href="./local/templates/lka/css/style.min.css">  
+	<noscript>
+		<style> 
+		  .content-wrapper {
+			overflow: auto;
+		  }
+		</style>
+	  </noscript>
+</head>
+<body>
+ 
+     <header id="header">
+    <nav class="site-nav simplebar-box">
+        <a href="/" class="logo">
+            <img src="local/templates/lka/img/logo.svg" class="spacer"
+                alt="Логотип российского государственного гуманитарного университета">
+        </a>
+        <ul class="main-menu">
+            <li><a href="main.html" class="active">Общие сведения</a></li>
+            <li class="main-menu__parent-item">
+                <div>
+                    <a href="education.html" >Обучение</a>
+                    <button class="btn-open-submenu">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.75 4.5L6 8.25L2.25 4.5"  stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="plane.html">Учебный план</a></li>
+                    <li><a href="progress.html">Успеваемость по учебному плану</a></li>
+                    <li><a href="record-book.html">Зачетная книжка</a></li>
+                    <li><a href="now-progress.html">Текущая успеваемость</a></li>
+                    <li><a href="orders.html">Приказы</a></li>
+                </ul>
+            </li>
+            <li class="main-menu__parent-item"> 
+                <div>
+                    <a href="МСО.html">МСО</a>
+                    <button class="btn-open-submenu">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.75 4.5L6 8.25L2.25 4.5"  stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="references.html">Справки</a></li>
+                    <li><a href="payment.html">Платежи</a></li>
+                    <li><a href="vactination.html">Вакцинация</a></li>
+                    <li><a href="student-statement.html">Заявления студентов</a></li>
+                    <li><a href="bypass-sheet.html">Обходной лист</a></li>
+                </ul>
+            </li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="online.html">Электронное обучение</a></li>
+            <li><a href="teacher-communication.html">Связь с преподавателем</a></li>
+            <li><a href="methodic.html">Методическое обеспечение</a></li>
+            <li><a href="audit.html">Анкеты</a></li>
+            <li><a href="#">Деканат</a></li>
+        </ul>
+    </nav>
+    <div class="inner">
+        <div class="top-panel">
+            <form class="search-form">
+                <input type="text" class="placeholder" name="search" autocomplete="off" placeholder="Поиск по сайту...">
+                <button type="submit" class="search-form__btn" aria-label="Искать">
+                    <svg viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="9.32491" cy="8.82495" r="6.74142" stroke="#1E5BA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.0137 13.8638L16.6567 16.5" stroke="#1E5BA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                </button>
+            </form>
+            <button class="open-search-form-btn top-panel__item"> 
+                <svg   viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="9.32491" cy="8.82495" r="6.74142" stroke="#1E5BA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.0137 13.8638L16.6567 16.5" stroke="#1E5BA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button class="btn-messages top-panel__item no-text" aria-label="открыть мессенжер">
+                открыть мессенжер
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.4" d="M12.02 2C6.21 2 2 6.74 2 12C2 13.68 2.49 15.41 3.35 16.99C3.51 17.25 3.53 17.58 3.42 17.89L2.75 20.13C2.6 20.67 3.06 21.07 3.57 20.91L5.59 20.31C6.14 20.13 6.57 20.36 7.081 20.67C8.541 21.53 10.36 21.97 12 21.97C16.96 21.97 22 18.14 22 11.97C22 6.65 17.7 2 12.02 2Z" fill="#1E5BA6"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9805 13.2901C11.2705 13.2801 10.7005 12.7101 10.7005 12.0001C10.7005 11.3001 11.2805 10.7201 11.9805 10.7301C12.6905 10.7301 13.2605 11.3001 13.2605 12.0101C13.2605 12.7101 12.6905 13.2901 11.9805 13.2901ZM7.37009 13.2901C6.67009 13.2901 6.09009 12.7101 6.09009 12.0101C6.09009 11.3001 6.66009 10.7301 7.37009 10.7301C8.08009 10.7301 8.65009 11.3001 8.65009 12.0101C8.65009 12.7101 8.08009 13.2801 7.37009 13.2901ZM15.3103 12.0101C15.3103 12.7101 15.8803 13.2901 16.5903 13.2901C17.3003 13.2901 17.8703 12.7101 17.8703 12.0101C17.8703 11.3001 17.3003 10.7301 16.5903 10.7301C15.8803 10.7301 15.3103 11.3001 15.3103 12.0101Z" fill="#1E5BA6"/>
+                </svg>
+                <span class="btn-messages__count">10</span>
+            </button>
+            <div class="top-panel__item top-panel__events-box" >
+                <button class="events" aria-label="открыть окно с уведомлениями">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.7695 11.6453C19.039 10.7923 18.7071 10.0531 18.7071 8.79716V8.37013C18.7071 6.73354 18.3304 5.67907 17.5115 4.62459C16.2493 2.98699 14.1244 2 12.0442 2H11.9558C9.91935 2 7.86106 2.94167 6.577 4.5128C5.71333 5.58842 5.29293 6.68822 5.29293 8.37013V8.79716C5.29293 10.0531 4.98284 10.7923 4.23049 11.6453C3.67691 12.2738 3.5 13.0815 3.5 13.9557C3.5 14.8309 3.78723 15.6598 4.36367 16.3336C5.11602 17.1413 6.17846 17.6569 7.26375 17.7466C8.83505 17.9258 10.4063 17.9933 12.0005 17.9933C13.5937 17.9933 15.165 17.8805 16.7372 17.7466C17.8215 17.6569 18.884 17.1413 19.6363 16.3336C20.2118 15.6598 20.5 14.8309 20.5 13.9557C20.5 13.0815 20.3231 12.2738 19.7695 11.6453Z" fill="#1E5BA6"/>
+                        <path opacity="0.4" d="M14.0086 19.2284C13.5087 19.1216 10.4625 19.1216 9.96263 19.2284C9.53527 19.3271 9.07312 19.5567 9.07312 20.0602C9.09797 20.5406 9.37923 20.9647 9.76882 21.2336L9.76783 21.2346C10.2717 21.6273 10.8631 21.8771 11.4822 21.9668C11.8122 22.0121 12.1481 22.0101 12.49 21.9668C13.1082 21.8771 13.6995 21.6273 14.2034 21.2346L14.2024 21.2336C14.592 20.9647 14.8733 20.5406 14.8981 20.0602C14.8981 19.5567 14.436 19.3271 14.0086 19.2284Z" fill="#1E5BA6"/>
+                    </svg>
+                    <span class="events__count">4</span>
+                </button>
+                <div class="notification-tab ">
+                    <div class="notification-tab__control">
+                        <button class="btn btn--solid  btn--lowercase active" aria-label="открыть уведомления от продразделений">Подразделения</button>
+                        <button class="btn btn--solid btn--lowercase" aria-label="открыть уведомления от преподавателей">Преподаватели</button>
+                    </div>
+                    <div class="notification-tab__field notification-tab-field notification-tab__field--show"> 
+                        <ul class="notification__list notification-list">
+                            <li class="notification-list__item notification-list-item">
+                                <a href="#" class="notification-list-item__link">
+                                    <time datetime="2022-04-18 00:00">18.04.2022</time>
+                                    <span class="notification-list-item__body">
+                                        <span class="notification-list-item__message">
+                                            Информация отдела платных образовательных услуг
+                                        </span>
+                                        <span class="no-read-marker"></span>
+                                    </span> 
+                                </a>  
+                             </li>
+                             <li class="notification-list__item notification-list-item">
+                                <a href="#" class="notification-list-item__link">
+                                    <time datetime="2022-04-18 00:00">18.04.2022</time>
+                                    <span class="notification-list-item__body">
+                                        <span class="notification-list-item__message">
+                                            Информация отдела платных образовательных услуг
+                                        </span>
+                                        <span class="no-read-marker"></span>
+                                    </span> 
+                                </a>   
+                             </li>
+                             <li class="notification-list__item notification-list-item"> 
+                                <a href="#" class="notification-list-item__link">
+                                    <time datetime="2022-04-18 00:00">18.04.2022</time>
+                                    <span class="notification-list-item__body">
+                                        <span class="notification-list-item__message">
+                                            Информация о работе
+                                        </span>
+                                    </span> 
+                                </a> 
+                             </li>
+                        </ul>
+                        <div class="notification-tab-field__footer">
+                            <a href="#" class="btn btn--dashed">Все объявления</a> 
+                        </div>
+                        
+                    </div>
+                    <div class="notification-tab__field "> 
+                        <ul class="notification__list notification-list">
+                            <li class="notification-list__item notification-list-item">
+                                <a href="#" class="notification-list-item__link">
+                                    <time datetime="2022-04-18 00:00">18.04.2022</time>
+                                    <span class="notification-list-item__body">
+                                        <span class="notification-list-item__message">
+                                            Срочно сдать задолжность по информатике!
+                                        </span>
+                                        <span class="no-read-marker"></span>
+                                    </span> 
+                                </a>  
+                             </li>
+                             <li class="notification-list__item notification-list-item">
+                                <a href="#" class="notification-list-item__link">
+                                    <time datetime="2022-04-18 00:00">18.04.2022</time>
+                                    <span class="notification-list-item__body">
+                                        <span class="notification-list-item__message">
+                                            Внимание - зачет по праву.
+                                        </span>
+                                        <span class="no-read-marker"></span>
+                                    </span> 
+                                </a>   
+                             </li>
+                             <li class="notification-list__item notification-list-item"> 
+                                <a href="#" class="notification-list-item__link">
+                                    <time datetime="2022-04-18 00:00">18.04.2022</time>
+                                    <span class="notification-list-item__body">
+                                        <span class="notification-list-item__message">
+                                            Внимание - зачет по диамату.
+                                        </span>
+                                        <span class="no-read-marker"></span>
+                                    </span> 
+                                </a>  
+                             </li>
+                             <li class="notification-list__item notification-list-item">
+                                <a href="#" class="notification-list-item__link">
+                                    <time datetime="2022-04-18 00:00">18.04.2022</time>
+                                    <span class="notification-list-item__body">
+                                        <span class="notification-list-item__message">
+                                            Информация о работе
+                                        </span>
+                                    </span> 
+                                </a>  
+                             </li>
+                        </ul>
+                        <div class="notification-tab-field__footer">
+                            <a href="#" class="btn btn--dashed">Все объявления</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <a href="auth.html" class="top-panel__item output-btn" aria-label="выйти из аккаунта">
+                <span class="output-btn__avatar output-btn__avatar--male">
+                    <!-- нужна будет аватарка пользоватля - разкомментировать код с картинкой -->
+                    <!-- <img src="local/templates/lka/image/arny.jpg" alt="Александр Солянкин"> -->
+                </span>
+                <span class="output-btn__name">Александр Солянкин</span>
+                <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.0182 10.0173H3.48572" stroke="#6A77A6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.7004 7.70877L13.0184 10.0173L10.7004 12.3258" stroke="#6A77A6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.23254 6.34963V5.611C7.23254 3.99996 8.538 2.6945 10.1498 2.6945H14.0163C15.6234 2.6945 16.9257 3.9968 16.9257 5.60388V14.423C16.9257 16.0341 15.6195 17.3403 14.0084 17.3403H10.1411C8.53484 17.3403 7.23254 16.0373 7.23254 14.431V13.6852" stroke="#6A77A6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </a>
+            <button class="burger   top-panel__item"><span></span></button>
+        </div>
+    </div>
+</header>	
+	 <main class="main"> 
+		<section class="e-learning-section typical-section">
+			<div class="inner">
+				<div class="e-learning">
+					<div class="e-learning__content"> 
+						<img src="local/templates/lka/img/mirapolis.png" class="e-learning--logo spacer" alt="Mirapolis">
+						<h1 class="e-learning__caption">
+							Электронное обучение
+						</h1>
+						<a href="#" class="btn btn--uppercase btn--orange btn-width-element">
+							перейти на сайт
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.75 15.9375V11.25H4.0625" stroke="#FFECD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M3.125 16.875L8.75 11.25" stroke="#FFECD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M12.5 15H16.25C16.4158 15 16.5747 14.9342 16.6919 14.8169C16.8092 14.6997 16.875 14.5408 16.875 14.375V3.75C16.875 3.58424 16.8092 3.42527 16.6919 3.30806C16.5747 3.19085 16.4158 3.125 16.25 3.125H5.625C5.45924 3.125 5.30027 3.19085 5.18306 3.30806C5.06585 3.42527 5 3.58424 5 3.75V7.5" stroke="#FFECD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a> 
+					</div> 
+					<img src="local/templates/lka/img/mon-group.png" alt="" class="decor-elem-mon">
+					<div class="decor-circle">
+						<div class="decor-circle__core"></div>
+					</div>
+				</div> 
+			</div>
+		</section>
+	 </main>
+	 <footer id="footer">
+    <div class="inner"> 
+        <div class="f-contact-item">
+            <span class="f-contact-item__caption">
+                звоните по телефону
+            </span>
+            <div class="f-contact-item__value">
+                +7(495) 250-61-18
+            </div>
+        </div>
+
+        <div class="f-contact-item ">
+            <span class="f-contact-item__caption">
+                Или пишите на почту
+            </span> 
+            <a class="f-contact-item__value" href="mailto:rsuh@rsuh.ru">rsuh@rsuh.ru</a> 
+        </div>
+
+        <div class="f-contact-item footer-address">
+            <span class="f-contact-item__caption">
+                Адрес РГГУ
+            </span>
+            <address class="f-contact-item__value">
+                125047 Москва, Миусская площадь, д. 6
+            </address>
+        </div>
+        <div class="copyright-box">
+            <a href="#" class="privacy-policy">Политика конфиденциальности</a>
+            <span class="copyright">©2022</span>
+        </div>
+    </div> 
+</footer>
+	<div class="great-shadow"></div>
+    <!-- ++++++++++JavaScript++++++++++--> 
+	<!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
+     <!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
+     <script src="./local/templates/lka/js/script.js"></script>
+    <!-- ++++++++++JavaScript end++++++++++-->
+</body>
+</html>
+	
+	

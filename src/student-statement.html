@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<title>Title here</title> 
+   
+<!--   Cascading Style Sheets--> 
+    <!-- <link rel="stylesheet" href="css/style.css">  -->
+    <link rel="stylesheet" href="./local/templates/lka/css/style.min.css">  
+	<noscript>
+		<style> 
+		  .content-wrapper {
+			overflow: auto;
+		  }
+		</style>
+	  </noscript>
+</head>
+<body>
+ 
+     @@include('_header.html')	
+	 <main class="main"> 
+		<section class="typical-section">
+			<div class="inner">
+				<header class="section-header">
+					<h1 class="h1">Заявления студентов</h1> 
+					<!-- если нужна будет ссылка вместо кнопки, то раскомментировать ее и убрать кнопку. А так, класс .btn и все его модификаторы подходят хоть кнопке, хоть ссылке, это можно увидеть в инструкции  -->
+					<!-- <a href="#" class="btn btn--solid btn--with-element btn-lowercase">
+						создать документ
+						<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.875 5.99998H10.125" stroke="#9CB1F9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M6 1.87498V10.125" stroke="#9CB1F9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg> 
+					</a> -->
+					<button class="btn btn--solid btn--with-element btn-lowercase">
+						создать документ
+						<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.875 5.99998H10.125" stroke="#9CB1F9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M6 1.87498V10.125" stroke="#9CB1F9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg> 
+					</button>
+				</header>   
+				<!-- 
+				РАЗРАБОТЧИК! 
+				Обрати внимание, что  на данной странице используется таблица как и на странице Вакцинация и имеет класс table-vactination
+				-->
+				<div class="table-box">
+					<table class="table table-zebra table-vactination">
+						<thead>
+							<tr>
+								<th>№</th>
+								<th>Тип документа</th>
+								<th>Дата подачи</th>
+								<th>Дата изменения</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>599368</td>
+								<td>На оформление справки о размере стипендии</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+								</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+									<span class="status-marker status-marker--on-signature">
+										новая
+									</span>
+								</td>
+							</tr> 
+							<tr>
+								<td>599368</td>
+								<td>На оформление справки о размере стипендии</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+								</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+									<span class="status-marker status-marker--on-signature">
+										новая
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>599368</td>
+								<td>На оформление справки о размере стипендии</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+								</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+									<span class="status-marker status-marker--on-signature">
+										новая
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>599368</td>
+								<td>На оформление справки о размере стипендии</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+								</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+									<span class="status-marker status-marker--on-signature">
+										новая
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>599368</td>
+								<td>На оформление справки о размере стипендии</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+								</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+									<span class="status-marker status-marker--on-signature">
+										новая
+									</span>
+								</td>
+							</tr><tr>
+								<td>599368</td>
+								<td>На оформление справки о размере стипендии</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+								</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+									<span class="status-marker status-marker--on-signature">
+										новая
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>599368</td>
+								<td>На оформление справки о размере стипендии</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+								</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+									<span class="status-marker status-marker--on-signature">
+										новая
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>599368</td>
+								<td>На оформление справки о размере стипендии</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+								</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+									<span class="status-marker status-marker--on-signature">
+										новая
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>599368</td>
+								<td>На оформление справки о размере стипендии</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+								</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+									<span class="status-marker status-marker--on-signature">
+										новая
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>599368</td>
+								<td>На оформление справки о размере стипендии</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+								</td>
+								<td>
+									<time class="table-date">
+										<span class="table-date__data">07.07.2022 </span>
+										<span class="table-date__time">15:40:33	</span>
+									</time>
+									<span class="status-marker status-marker--on-signature">
+										новая
+									</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<ul class="pagination">
+					<li>
+						<span href="#" class="pagination__btn">
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.5 2.25L3.75 6L7.5 9.75" stroke="#CFD6E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg> 
+						</span>
+					</li>
+					<li>
+						<a href="#" class="pagination__btn pagination__btn--active">1</a>
+					</li>
+					<li>
+						<a href="#" class="pagination__btn">2</a>
+					</li>
+					<li>
+						<a href="#" class="pagination__btn">3</a>
+					</li>
+					<li>
+						<span class="pagination__btn">...</span>
+					</li>
+					<li>
+						<a href="#" class="pagination__btn">50</a>
+					</li>
+					<li>
+						<a href="#" class="pagination__btn">
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4.5 2.25L8.25 6L4.5 9.75" stroke="#9CB1F9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg> 
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	 </main>
+	 @@include('_footer.html')
+	<div class="great-shadow"></div>
+    <!-- ++++++++++JavaScript++++++++++--> 
+	<!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
+     <!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
+     <script src="./local/templates/lka/js/script.js"></script>
+    <!-- ++++++++++JavaScript end++++++++++-->
+</body>
+</html>
+	
+	

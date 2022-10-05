@@ -1,0 +1,49 @@
+.info-of-divisions-card{
+    background-color: var(--bg-alt);
+    border-radius: 2.4rem;
+    padding: 2rem 3rem 1rem 3rem;
+    box-sizing: border-box;
+    &:not(:last-child){
+        margin-bottom: 2rem;
+    }
+    .info-of-divisions-card__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.1rem;
+    } 
+    .info-of-divisions-card__attached-files{
+        margin-bottom: 2rem;
+        .file-elem:not(:first-child){
+            margin-top: 0.4rem;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+    .info-of-divisions-card {
+        padding: 20px 20px 10px 20px;
+        h2{
+            text-align: center;
+        }
+        .info-of-divisions-card__header{
+            flex-direction: column;
+            justify-content: cenetr;
+            .date-marker{
+                margin-bottom: 1rem;
+            }
+            .user{
+                flex-direction: column;
+                text-align: center;
+                &--reverse .user__avatar{
+                    margin: 0;
+                    margin-bottom: 1rem;
+                }
+            } 
+        }
+        .file-elem{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.announcements{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-alt);
+    padding: 2rem 3rem 3rem 3rem;
+    box-sizing: border-box;
+    border-radius: 2.4rem;
+    overflow: hidden; 
+
+    .date-marker{
+        margin-bottom: 1rem;
+    }
+    .announcements__header{
+
+    }
+    .announcements__main{
+
+    }
+    .announcements__footer{
+        margin-top: auto;
+    }
+    .webinar-link{
+        margin-bottom: 2rem;
+    }
+    .file-elem{
+        display: block; 
+    }
+    .user{
+        margin-top: 1.5rem;
+    }
+} 
+.announcements-slider-box{
+    // max-width: 1048px;
+    .swiper-slide{
+        height: auto;
+    }
+    .swiper-pagination{
+        position: relative;
+        bottom: 0;
+    }
+} 

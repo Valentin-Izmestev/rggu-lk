@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<title>Title here</title> 
+   
+<!--   Cascading Style Sheets--> 
+    <!-- <link rel="stylesheet" href="css/style.css">  -->
+    <link rel="stylesheet" href="./local/templates/lka/css/style.min.css">  
+	<noscript>
+		<style> 
+		  .content-wrapper {
+			overflow: auto;
+		  }
+		</style>
+	  </noscript>
+</head>
+<body>
+ 
+     @@include('_header.html')	
+	 <main class="main"> 
+		<section class="typical-section big-references-section">
+			<div class="inner">
+				<header class="section-header">
+					<h1 class="h1">Справки</h1> 
+					<!-- если нужна будет ссылка вместо кнопки, то раскомментировать ее и убрать кнопку. А так, класс .btn и все его модификаторы подходят хоть кнопке, хоть ссылке, это можно увидеть в инструкции  -->
+					<!-- <a href="#" class="btn btn--solid btn--with-element btn-lowercase">
+						Заказать справку
+						<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.875 5.99998H10.125" stroke="#9CB1F9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M6 1.87498V10.125" stroke="#9CB1F9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg> 
+					</a> -->
+					<button class="btn btn--solid btn--with-element btn-lowercase">
+						Заказать справку
+						<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.875 5.99998H10.125" stroke="#9CB1F9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M6 1.87498V10.125" stroke="#9CB1F9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg> 
+					</button>
+				</header>
+				<div class="references-box">
+					<h2 class="references-caption">Мои заказы справок</h2>
+					<div class="table-box">
+						<table class="table table-zebra references-table">
+							<thead>
+								<tr>
+									<th>№</th>
+									<th>Дата подачи</th>
+									<th>Дата изменения</th>
+									<th>Тип справки</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>993156</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">07.07.2022 </span>
+											<span class="table-date__time">15:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">08.07.2022 </span>
+											<span class="table-date__time">16:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<div class="references-table__type references-table-type">
+											<div class="references-table-type__text">
+												<p>
+													Справка об успеваемости 
+												</p>
+												<span class="table__explanation">
+													(повышенная стипендия, перевод на бюджет)
+												</span>
+											</div>
+											<span class="status-marker status-marker--being-created">
+												создаётся
+											</span>
+										</div> 
+									</td> 
+								</tr>
+								<tr>
+									<td>993155</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">07.07.2022 </span>
+											<span class="table-date__time">15:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">08.07.2022 </span>
+											<span class="table-date__time">16:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<div class="references-table__type references-table-type">
+											<div class="references-table-type__text">
+												<p>
+													Справка об успеваемости 
+												</p> 
+											</div>
+											<span class="status-marker status-marker--ready">
+												готова
+											</span>
+										</div> 
+									</td>
+								</tr>
+								<tr>
+									<td>993148</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">07.07.2022 </span>
+											<span class="table-date__time">15:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">08.07.2022 </span>
+											<span class="table-date__time">16:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<div class="references-table__type references-table-type">
+											<div class="references-table-type__text">
+												<p>
+													Справка с места учебы 
+												</p> 
+											</div>
+											<span class="status-marker status-marker--refused">
+												отказано
+											</span>
+										</div> 
+									</td>
+								</tr>
+								<tr>
+									<td>993148</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">07.07.2022 </span>
+											<span class="table-date__time">15:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">08.07.2022 </span>
+											<span class="table-date__time">16:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<div class="references-table__type references-table-type">
+											<div class="references-table-type__text">
+												<p>
+													Справка с места учебы 
+												</p> 
+											</div>
+											<span class="status-marker status-marker--on-signature">
+												на подписи
+											</span>
+										</div> 
+									</td>
+								</tr>
+								<tr>
+									<td>993156</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">07.07.2022 </span>
+											<span class="table-date__time">15:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">08.07.2022 </span>
+											<span class="table-date__time">16:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<div class="references-table__type references-table-type">
+											<div class="references-table-type__text">
+												<p>
+													Справка об успеваемости 
+												</p>
+												<span class="table__explanation">
+													(повышенная стипендия, перевод на бюджет)
+												</span>
+											</div>
+											<span class="status-marker status-marker--being-created">
+												создаётся
+											</span>
+										</div> 
+									</td> 
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div> 
+				<div class="references-box">
+					<h2 class="references-box__caption">Заказы справок, поступившие не через портал</h2>
+					<div class="table-box">
+						<table class="table table-zebra references-table references-table--alt">
+							<thead>
+								<tr>
+									<th>№</th>
+									<th>Оформлена</th>
+									<th>Срок действия</th>
+									<th>Тип справки</th>
+								</tr> 
+							</thead>
+							<tbody>
+								<tr>
+									<td>30.1-0003-21/22</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">07.07.2022 </span>
+											<span class="table-date__time">15:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">08.07.2022 </span>
+											<span class="table-date__time">16:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<div class="references-table__type references-table-type">
+											<div class="references-table-type__text">
+												<p>
+													Справка в военкомат (ВО)
+												</p> 
+											</div>
+											<span class="status-marker status-marker--refused">
+												отказано
+											</span>
+										</div> 
+									</td> 
+								</tr>
+								<tr>
+									<td>30.1-5603-21/22</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">07.07.2022 </span>
+											<span class="table-date__time">15:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">08.07.2022 </span>
+											<span class="table-date__time">16:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<div class="references-table__type references-table-type">
+											<div class="references-table-type__text">
+												<p>
+													Справка об успеваемости (ПовСтип, ПерБюд)
+												</p> 
+											</div> 
+											<span class="status-marker status-marker--being-created">
+												создаётся
+											</span>
+										</div> 
+									</td> 
+								</tr>
+								<tr>
+									<td>30.1-0003-21/22</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">07.07.2022 </span>
+											<span class="table-date__time">15:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">08.07.2022 </span>
+											<span class="table-date__time">16:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<div class="references-table__type references-table-type">
+											<div class="references-table-type__text">
+												<p>
+													Справка с места учебы
+												</p> 
+											</div>
+											<span class="status-marker status-marker--being-created">
+												создаётся
+											</span>
+										</div> 
+									</td> 
+								</tr>
+								<tr>
+									<td>30.1-0003-21/22</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">07.07.2022</span>
+											<span class="table-date__time">15:40:33</span>
+										</time>
+									</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">08.07.2022</span>
+											<span class="table-date__time">16:40:33</span>
+										</time>
+									</td>
+									<td>
+										<div class="references-table__type references-table-type">
+											<div class="references-table-type__text">
+												<p>
+													Справка об успеваемости 
+												</p>
+												<span class="table__explanation">
+													(повышенная стипендия, перевод на бюджет)
+												</span>
+											</div>
+											<span class="status-marker status-marker--on-signature">
+												на подписи
+											</span>
+										</div> 
+									</td> 
+								</tr>
+								<tr>
+									<td>30.1-0003-21/22</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">07.07.2022 </span>
+											<span class="table-date__time">15:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<time class="table-date">
+											<span class="table-date__data">08.07.2022 </span>
+											<span class="table-date__time">16:40:33	</span>
+										</time>
+									</td>
+									<td>
+										<div class="references-table__type references-table-type">
+											<div class="references-table-type__text">
+												<p>
+													Справка с места учебы
+												</p> 
+											</div>
+											<span class="status-marker status-marker--ready">
+												готова
+											</span>
+										</div> 
+									</td> 
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+	 </main>
+	 @@include('_footer.html')
+	<div class="great-shadow"></div>
+    <!-- ++++++++++JavaScript++++++++++--> 
+	<!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
+     <!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
+     <script src="./local/templates/lka/js/script.js"></script>
+    <!-- ++++++++++JavaScript end++++++++++-->
+</body>
+</html>
+	
+	

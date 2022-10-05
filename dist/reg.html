@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title here</title>
+
+	<!--   Cascading Style Sheets-->
+	<!-- <link rel="stylesheet" href="css/style.css">  -->
+	<link rel="stylesheet" href="./local/templates/lka/css/style.min.css">
+	<noscript>
+		<style>
+			.content-wrapper {
+				overflow: auto;
+			}
+		</style>
+	</noscript>
+</head>
+
+<body class="rggu-hall">
+	<div class="inner">
+		<div class="left-col">
+			<h1>Добро пожаловать на портал РГГУ!</h1>
+			<p>Введите данные паспорта и личного дела. </p>
+			<p>
+				На следующем шаге Вам будет предложено указать e-mail и пароль, который будет использоваться в
+				дальнейшем.
+			</p>
+			<a href="auth.html" class="btn">У меня есть личный кабинет</a>
+		</div>
+		<div class="right-col">
+			<form class="form hall-form">
+				<div class="hall-form__logo-box">
+					<img src="./local/templates/lka/img/rggu-big-logo.svg"
+						alt="Российский государственный гуманитарный университет" class="hall-form__logo">
+				</div>
+				<fieldset>
+					<legend>
+						Форма авторизации
+					</legend>
+					<!-- что бы было видно сообщение о ошибке, нужно поставить класс form__error-message--show -->
+					<div class="form__error-message ">
+						Неправильно введен логин или пароль
+					</div>
+					<label class="form-elem">
+						<input type="text" name="login" class="form-elem__input" placeholder="Логин">
+						<span>Серия и номер паспорта<sup>*</sup></span>
+					</label>
+					<label class="form-elem">
+						<input type="text" name="login" class="form-elem__input" placeholder="Логин">
+						<span>Номер личного дела<sup>*</sup></span>
+					</label>
+					<div class="form__checkbox-with-desk form-checkbox-with-desk clearfix">
+						<label class="form__checkbox-container fleft">
+							<input type="checkbox" name="approval">
+							<svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.4375 2.8125L4.0625 7.1875L1.875 5" stroke="white" stroke-width="3.5"
+									stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</label>
+						<span class="form-checkbox-with-desk__deskription db rL hid">
+							Я согласен на <a href="#">передачу и обработку персональных данных</a>
+						</span>
+					</div>
+					<button type="submit" class="btn btn--orange upp">АКТИВИРОВАТЬ</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+	<!-- ++++++++++JavaScript++++++++++-->
+	<!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
+	<!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
+	<script src="./local/templates/lka/js/script.js"></script>
+	<!-- ++++++++++JavaScript end++++++++++-->
+</body>
+
+</html>

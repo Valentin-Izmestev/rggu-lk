@@ -1,0 +1,42 @@
+#footer{
+    box-sizing: border-box;
+    padding:  2.5rem 0; 
+    background-color: var(--blue);
+    color: var(--text-alt);
+    font-size: 1.6rem;
+    a{
+        font-size: inherit;
+        color: inherit;
+    }
+    .inner{
+        display: flex;
+        align-items: center;
+    }
+    .copyright-box{
+        margin-left: auto;
+    }
+    .copyright{
+        margin-left: 25px;
+    }
+    .f-contact-item{
+        margin-right: 3.5%;
+    }
+}
+.f-contact-item {
+    .f-contact-item__caption {
+        display: block;
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin-bottom: 0.7rem;
+        font-weight: 700;
+    }
+
+    .f-contact-item__value,
+    a.f-contact-item__value {
+        display: block;
+        font-size: 1.8rem;
+        line-height: 1;
+        color: var(--text-alt);
+        font-weight: 700; 
+    }
+}

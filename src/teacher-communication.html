@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<title>Title here</title> 
+   
+<!--   Cascading Style Sheets--> 
+    <!-- <link rel="stylesheet" href="css/style.css">  -->
+    <link rel="stylesheet" href="./local/templates/lka/css/style.min.css">  
+	<noscript>
+		<style> 
+		  .content-wrapper {
+			overflow: auto;
+		  }
+		</style>
+	  </noscript>
+</head>
+<body>
+ 
+     @@include('_header.html')	
+	 <main class="main"> 
+		<section class="typical-section theacher-chat-section">
+			<div class="inner">
+				<header class="section-header">
+					<h1 class="h1">Связь с преподавателем</h1> 
+				</header>  
+				<form class="connection-form">
+					<div class="connection-form__column-box">
+						<div class="left-col">
+							<label class="form-elem">
+								<select class="form__category-select" name="category" id="cat127"> 
+									<option placeholder></option>
+									<option value="Учебная деятельность (ВКР)">Учебная деятельность (ВКР)</option> 
+								</select>
+								<span>Подразделение</span>
+							</label>
+						</div>
+						<div class="right-col">
+							<div class="search-form">
+								<input type="text" class="placeholder" name="search-name" autocomplete="off" placeholder="Поиск по дисциплине...">
+								<button type="submit" class="search-form__btn" aria-label="Искать">
+									<svg viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="9.32491" cy="8.82495" r="6.74142" stroke="#1E5BA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M14.0137 13.8638L16.6567 16.5" stroke="#1E5BA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg> 
+								</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="alphabet">
+						<button class="alphabet__item">A</button>
+						<button class="alphabet__item">Б</button>
+						<button class="alphabet__item">В</button>
+						<button class="alphabet__item">Г</button>
+						<button class="alphabet__item">Д</button>
+						<button class="alphabet__item">Е</button>
+						<button class="alphabet__item">Ж</button>
+						<button class="alphabet__item">И</button>
+						<button class="alphabet__item">К</button>
+						<button class="alphabet__item">Л</button>
+						<button class="alphabet__item">М</button>
+						<button class="alphabet__item">Н</button>
+						<button class="alphabet__item">О</button>
+						<button class="alphabet__item">П</button>
+						<button class="alphabet__item">Р</button>
+						<button class="alphabet__item">С</button>
+						<button class="alphabet__item">Т</button>
+						<button class="alphabet__item">У</button>
+						<button class="alphabet__item">Ф</button>
+						<button class="alphabet__item">Ц</button>
+						<button class="alphabet__item">Ч</button>
+						<button class="alphabet__item">Ш</button>
+						<button class="alphabet__item">Щ</button>
+						<button class="alphabet__item">Э</button>
+						<button class="alphabet__item">Ю</button>
+						<button class="alphabet__item">Я</button> 
+					</div>
+				</form>
+				<div class="table-box">
+					<table class="table table-zebra table-theacher-chats">
+						<thead>
+							<tr>
+								<th>ФИО</th>
+								<th>подразделение</th>
+								<th>e-mail</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="teacher-info">
+										<div class="teacher-info__avatar">
+											<img src="local/templates/lka/image/arny.jpg" alt="Абаев Алан Лазаревич">
+										</div>
+										<span class="teacher-info__name">
+											Абаев Алан Лазаревич
+										</span>
+									</div>
+								</td>
+								<td>Интегрированных коммуникаций и рекламы</td>
+								<td>
+									<a href="mailto:Abaeva@rggu.ru">Abaeva@rggu.ru</a>
+									<button class="btn btn--blue btn--lowercase">Начать чат</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="teacher-info">
+										<div class="teacher-info__avatar"> 
+										</div>
+										<span class="teacher-info__name">
+											Абгарян Наталья Борисовна
+										</span>
+									</div>
+								</td>
+								<td>Интегрированных коммуникаций и рекламы</td>
+								<td> 
+									<!-- если нет электронной почты преподавателя, то вместо ссылки разместить пустой спан -->
+									<span></span>
+									<button class="btn btn--blue btn--lowercase">Начать чат</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="teacher-info">
+										<div class="teacher-info__avatar"> 
+										</div>
+										<span class="teacher-info__name">
+											Абаев Алан Лазаревич
+										</span>
+									</div>
+								</td>
+								<td>Интегрированных коммуникаций и рекламы</td>
+								<td>
+									<a href="mailto:Abaeva@rggu.ru">Abaeva@rggu.ru</a>
+									<button class="btn btn--blue btn--lowercase">Начать чат</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="teacher-info">
+										<div class="teacher-info__avatar"> 
+										</div>
+										<span class="teacher-info__name">
+											Абгарян Наталья Борисовна
+										</span>
+									</div>
+								</td>
+								<td>Классической филологии</td>
+								<td> 
+									<!-- если нет электронной почты преподавателя, то вместо ссылки разместить пустой спан -->
+									<span></span>
+									<button class="btn btn--blue btn--lowercase">Начать чат</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="teacher-info">
+										<div class="teacher-info__avatar"> 
+										</div>
+										<span class="teacher-info__name">
+											Абаев Алан Лазаревич
+										</span>
+									</div>
+								</td>
+								<td>Интегрированных коммуникаций и рекламы</td>
+								<td>
+									<a href="mailto:Abaeva@rggu.ru">Abaeva@rggu.ru</a>
+									<button class="btn btn--blue btn--lowercase">Начать чат</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="teacher-info">
+										<div class="teacher-info__avatar"> 
+										</div>
+										<span class="teacher-info__name">
+											Абгарян Наталья Борисовна
+										</span>
+									</div>
+								</td>
+								<td>Классической филологии</td>
+								<td> 
+									<!-- если нет электронной почты преподавателя, то вместо ссылки разместить пустой спан -->
+									<span></span>
+									<button class="btn btn--blue btn--lowercase">Начать чат</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="teacher-info">
+										<div class="teacher-info__avatar"> 
+										</div>
+										<span class="teacher-info__name">
+											Абаев Алан Лазаревич
+										</span>
+									</div>
+								</td>
+								<td>Интегрированных коммуникаций и рекламы</td>
+								<td>
+									<a href="mailto:Abaeva@rggu.ru">Abaeva@rggu.ru</a>
+									<button class="btn btn--blue btn--lowercase">Начать чат</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+		</section>
+	 </main>
+	 @@include('_footer.html')
+	<div class="great-shadow"></div>
+    <!-- ++++++++++JavaScript++++++++++--> 
+	<!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
+     <!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
+     <script src="./local/templates/lka/js/script.js"></script>
+    <!-- ++++++++++JavaScript end++++++++++-->
+</body>
+</html>
+	
+	

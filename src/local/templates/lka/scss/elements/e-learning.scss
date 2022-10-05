@@ -1,0 +1,132 @@
+.e-learning{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--soft-blue);
+    border-radius: 2.4rem;
+    box-sizing: border-box;
+    padding: 50px 4% 50px 9.6%; 
+    aspect-ratio: 1540/747;
+    overflow: hidden;
+    .e-learning__content{
+        position: relative;
+        width: 60%;
+        padding-right: 2rem;
+        box-sizing: border-box;
+        .e-learning--logo{
+            display: block;
+            margin-bottom: 1.4rem;
+            max-width: 25.2rem; 
+        }
+        .e-learning__caption{
+            margin-bottom: 100px;
+            color: var(--bg-alt);
+            font-size: 5rem;
+            line-height: 1.36; 
+        }
+        .btn{
+            max-width: 246px;
+        }
+    }
+    .decor-elem-mon { 
+        width: 40%;
+        max-width: 525px; 
+        height: auto; 
+    }
+    .decor-circle{
+        position: absolute;
+        max-width: 892px;
+        width: 63%;
+        top: 48%;
+        left: 61%;
+        aspect-ratio: 10/10;
+        box-sizing: border-box;
+        border: 2px dashed var(--bg-alt);
+        border-radius: 50%;
+        .decor-circle__core{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 90%;
+            height: 90%;
+            background: rgba(241, 245, 248, 0.6);
+            backdrop-filter: blur(7px);
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 1415px) {
+    .e-learning {
+        .e-learning__content {
+            .e-learning__caption {
+                margin-bottom: 5rem;
+                color: var(--bg-alt);
+                font-size: 4rem;
+                line-height: 1.16;
+            }
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    .e-learning{
+        flex-direction: column;
+        aspect-ratio: unset;
+        padding: 50px 7% 50px 7%;
+        .e-learning__content {
+            position: relative;
+            width: 100%;
+            padding-right: 0; 
+            margin-bottom: 6rem;
+            .e-learning--logo{
+                max-width: 230px;
+                margin: 0 auto;
+                margin-bottom: 1.5rem;
+            }
+            .e-learning__caption{
+                text-align: center;
+            }
+            .btn{
+                margin: 0 auto;
+            }
+        }
+        .decor-elem-mon {
+            width: 50%; 
+        }
+        .decor-circle{
+            top: 63%;
+            left: 55%;
+        }
+    }
+}
+@media screen and (max-width: 550px){
+    .e-learning {
+        .decor-elem-mon {
+            width: 60%;
+        }
+        .decor-circle {
+            top: 72%;
+            left: 62%;
+        }
+    }
+}
+@media screen and (max-width: 450px){
+    .e-learning {
+        .decor-elem-mon {
+            width: 90%;
+        }
+        .decor-circle {
+            top: 72%;
+            left: 62%;
+        }
+        .decor-circle{
+            width: 75%;
+            top: 74%;
+            left: 55%; 
+        }
+    }
+}
