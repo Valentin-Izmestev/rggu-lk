@@ -285,6 +285,12 @@
             left: 2rem;
         }
     }
+    .question-box-lecturer { 
+        padding: 1rem 2rem; 
+        .question-box-lecturer__name { 
+            white-space: normal;
+        }
+    } 
 }
 @media screen and (max-width: 600px){
     .card-items-section .card-items-box { 
