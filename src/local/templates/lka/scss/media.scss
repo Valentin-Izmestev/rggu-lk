@@ -4,6 +4,13 @@
             overflow: auto;
         }
     }
+    .question-box {
+        .question-box__content {
+            .question-box-lecturer { 
+                margin-left: 2rem;
+            }
+        }
+    }
 }
 @media screen and (max-width: 1420px){
     #footer {
@@ -91,7 +98,51 @@
         grid-template-columns: repeat(2,1fr);
         grid-gap: 1.5rem;
     }
+
+    .question-element{
+        padding: 1rem 1.5rem;
+        &.question-element__ruler{
+            display: none;
+        }
+        &:nth-child(2){
+            border-radius: 2.4rem 2.4rem 0 0;
+        }
+        .col-one{
+            width: 40%;
+        }
+        .col-two { 
+            padding: 0 1rem; 
+            width: 30%;
+            padding: 0 1rem;
+            min-width: 315px;
+            .question-element__cell{
+                &:last-child {
+                    text-align: center;
+                    width: 16.66%;
+                    min-width: auto;
+                }
+            } 
+        }  
+        .col-three{
+            width: 30%;
+        }
+    } 
+    .question-box {
+        .question-element__quest {
+            .question-element__cell {
+                padding: 0 0.3rem;
+            }
+        }
+    }
+    .audit-star span { 
+        width: 2rem;
+        height: 2rem; 
+        font-size: 1.2rem;
+        line-height: 1.5; 
+    }
 }
+ 
+ 
 @media screen and (max-width: 900px){
     .connection-form {
         .connection-form__column-box{
@@ -106,6 +157,18 @@
             width: 100%;
         }
     }
+}
+@media screen and (max-width: 840px){
+    .question-box {
+        .question-box__content{
+            flex-direction: column;
+            .question-box-lecturer{
+                width: 100%;
+                margin-left: 0;
+                margin-top: 2rem;
+            }
+        } 
+    } 
 }
 @media screen and (max-width: 800px){
     :root{
@@ -141,6 +204,29 @@
             top: 0.6rem;
             right: -0.6rem;
         }
+    }
+    .question-element{
+        flex-direction: column;
+        padding: 2rem;
+        .col-one,
+        .col-two,
+        .col-three{
+            width: 100%;
+            min-width: auto;
+        }
+        .col-one,
+        .col-two{
+            margin-bottom: 2rem;
+            padding: 0;
+        }
+         .col-three {
+            .form-elem {
+                span {
+                    top: 53%;
+                }
+            }
+         }
+        
     }
 }
 @media screen and (max-width: 720px){
@@ -260,6 +346,9 @@
                 font-size: 1.8rem;
             }
         }
+    }
+    .question-element{
+        padding: 2rem 1rem;
     }
 }
 @media screen and (max-width: 400px){

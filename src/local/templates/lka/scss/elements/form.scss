@@ -483,7 +483,11 @@
 
     } 
 }
-
+.form-questionnaire{
+    .btn{
+        margin-top: 5rem;
+    }
+}
 @keyframes upDown{
     from{
         transform:translateY(0);
