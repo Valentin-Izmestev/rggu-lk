@@ -236,7 +236,9 @@ if(formCategorySelects.length > 0){
         arTableCategory.push(new Choices(select,{ 
             noResultsText: 'Значение не найдено',
             loadingText: 'Загрузка...',  
-            placeholder: false, 
+            // placeholder: false, 
+            placeholder: true,
+            placeholderValue: 'жопа', 
             searchPlaceholderValue: 'Введите искомое значение', 
         })); 
         let thisSelect = select.parentElement.parentElement;

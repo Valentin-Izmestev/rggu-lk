@@ -4274,6 +4274,9 @@ main.main {
 .form-elem .choices .choices__list[aria-expanded] .choices__item--selectable::after {
   display: none;
 }
+.form-elem .choices__placeholder {
+  display: none;
+}
 
 .form__checkbox-container {
   position: relative;
