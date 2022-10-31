@@ -221,8 +221,202 @@
 		<section class="typical-section">
 			<div class="inner">
 				<header class="section-header">
-					<h1 class="h1">Заголовок</h1> 
+					<h1 class="h1">Отправка заявления</h1> 
 				</header>  
+				<form class="form form-ordering-help">
+					<div class="fieldset">
+						<span class="form-ordering-help__fieldset-number">
+							<span>1</span>
+						</span>
+						<h2 class="legend">
+							Выберите тип заявления 
+						</h2>
+						<ul class="list-form-elems">
+							<li>
+								<label class="form-radio">
+									<input class="form-ordering-help__radio-js" type="radio" name="request_type" value="CALL">
+									<span class="form-radio__simulator"></span>
+									<span class="form-radio__caption">Справка-вызов</span>
+								</label> 
+							</li>
+							<li>
+								<label class="form-radio">
+									<input class="form-ordering-help__radio-js" type="radio" name="request_type" value="STUD">
+									<span class="form-radio__simulator"></span>
+									<span class="form-radio__caption">Справка с места учебы</span>
+								</label> 
+							</li>
+							<li>
+								<label class="form-radio">
+									<input class="form-ordering-help__radio-js" type="radio" name="request_type" value="STUDY1"> 
+									<span class="form-radio__simulator"></span>
+									<span class="form-radio__caption">Справка об успеваемости (повышенная стипендия, перевод на бюджет)</span>
+								</label> 
+							</li>
+							<li>
+								<label class="form-radio">
+									<input class="form-ordering-help__radio-js" type="radio" name="request_type" value="STUDY2">
+									<span class="form-radio__simulator"></span>
+									<span class="form-radio__caption">Справка об успеваемости (скидка по оплате)</span>
+								</label> 
+							</li>
+						</ul>
+					</div>
+					<div class="form-ordering-help__container">
+						<div class="fieldset">
+							<span class="form-ordering-help__fieldset-number">
+								<span>2</span>
+							</span> 
+							<h2 class="legend">
+								Получатель справки 
+							</h2>
+							<label class="form-elem"> 
+								<input type="text" name="a" class="form-elem__input" required="required" placeholder="Место предоставления справки">
+								<span>Место предоставления справки<sup>*</sup></span>
+							</label>
+							<span class="form-elem-hint">
+								указывается полное юридически значимое наименование организации
+							</span>
+						</div>
+						<div class="fieldset">
+							<span class="form-ordering-help__fieldset-number">
+								<span>3</span>
+							</span> 
+							<h2 class="legend">
+								Данные справки 
+							</h2>
+							<label class="form-elem">
+								<select class="form__category-select form__category-select--no-search" name="acriclTK"> 
+									<option value="">This is a placeholder</option>
+									<option value="173">ст. 173 ТК РФ</option>
+									<option value="1731">ст. 173.1 ТК РФ</option>
+									<option value="174">ст. 174 ТК РФ</option>
+									<option value="176">ст. 176 ТК РФ</option>
+								</select>
+								<span>Статья трудового кодекса</span>
+							</label> 
+							<label class="form-elem">
+								<select class="form__category-select form__category-select--no-search" name="type-of-certification "> 
+									<option value="">This is a placeholder</option>
+									<option value="прохождение промежуточной аттестации">прохождение промежуточной аттестации</option>
+									<option value="подготовка и защита выпускной квалификационной работы">подготовка и защита выпускной квалификационной работы</option>
+									<option value="сдача государственных экзаменов">сдача государственных экзаменов</option>
+									<option value="сдача государственного экзамена">сдача государственного экзамена</option>
+									<option value="подготовка и защита выпускной квалификационной работы...">подготовка и защита выпускной квалификационной работы...</option>
+								</select>
+								<span>Вид аттестации<sup>*</sup></span>
+							</label> 
+							<label class="form-elem form-elem--date"> 
+								<input type="text" name="date" class="form-elem__input flatpickr flatpickr-input flatpickr--no-time" placeholder="Дата публикации" data-id="datetime">
+								<span>Дата начала отпуска<sup>*</sup></span>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.09277 9.40421H20.9167" stroke="#1E5BA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M16.0433 2V5.29078" stroke="#1E5BA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M7.96515 2V5.29078" stroke="#1E5BA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M16.2383 3.57922H7.77096C4.83427 3.57922 3 5.21516 3 8.22225V17.2719C3 20.3263 4.83427 22 7.77096 22H16.229C19.175 22 21 20.3546 21 17.3475V8.22225C21.0092 5.21516 19.1842 3.57922 16.2383 3.57922Z" stroke="#1E5BA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg> 
+							</label>
+							<label class="form-elem form-elem--date"> 
+								<input type="text" name="date" class="form-elem__input flatpickr flatpickr-input  flatpickr--no-time" placeholder="Дата публикации" data-id="datetime">
+								<span>Дата окончания отпуска<sup>*</sup></span>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.09277 9.40421H20.9167" stroke="#1E5BA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M16.0433 2V5.29078" stroke="#1E5BA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M7.96515 2V5.29078" stroke="#1E5BA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M16.2383 3.57922H7.77096C4.83427 3.57922 3 5.21516 3 8.22225V17.2719C3 20.3263 4.83427 22 7.77096 22H16.229C19.175 22 21 20.3546 21 17.3475V8.22225C21.0092 5.21516 19.1842 3.57922 16.2383 3.57922Z" stroke="#1E5BA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg> 
+							</label>
+						</div> 
+					</div>
+					<div class="form-ordering-help__container"> 
+						<div class="fieldset">
+							<span class="form-ordering-help__fieldset-number">
+								<span>2</span>
+							</span> 
+							<h2 class="legend">
+								Получатель справки 
+							</h2> 
+							<label class="form-elem"> 
+								<input type="text" name="a" class="form-elem__input" required="required" placeholder="Место предоставления справки">
+								<span>Место предоставления справки<sup>*</sup></span>
+							</label>
+							<span class="form-elem-hint">
+								указывается полное юридически значимое наименование организации
+							</span>
+						</div> 
+					</div>
+					<div class="form-ordering-help__container"> 
+						<div class="fieldset">
+							<span class="form-ordering-help__fieldset-number">
+								<span>2</span>
+							</span> 
+							<h2 class="legend">
+								Получатель справки 
+							</h2> 
+							<label class="form-elem"> 
+								<input type="text" name="a" class="form-elem__input" required="required" placeholder="Место предоставления справки" disabled="disabled" value="ФГБОУ ВО «РГГУ»">
+								<span>Место предоставления справки<sup>*</sup></span>
+							</label>  
+						</div> 
+						<div class="fieldset">
+							<span class="form-ordering-help__fieldset-number">
+								<span>3</span>
+							</span>
+							<h2 class="legend">
+								Данные справки 
+							</h2> 
+							<label class="form-elem">
+								<select class="form__category-select form__category-select--no-search" name="a"> 
+									<option value="">This is a placeholder</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+								</select>
+								<span>За сколько семестров</span>
+							</label>
+						</div>
+					</div>
+					<div class="form-ordering-help__container"> 
+						<div class="fieldset">
+							<span class="form-ordering-help__fieldset-number">
+								<span>2</span>
+							</span> 
+							<h2 class="legend">
+								Получатель справки 
+							</h2> 
+							<label class="form-elem"> 
+								<input type="text" name="a" class="form-elem__input" required="required" placeholder="Место предоставления справки" disabled="disabled" value="ФГБОУ ВО «РГГУ»">
+								<span>Место предоставления справки<sup>*</sup></span>
+							</label>  
+						</div> 
+						<div class="fieldset">
+							<span class="form-ordering-help__fieldset-number">
+								<span>3</span>
+							</span> 
+							<h2 class="legend">
+								Данные справки 
+							</h2> 
+							<label class="form-elem">
+								<select class="form__category-select form__category-select--no-search" name="a"> 
+									<option value="">This is a placeholder</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+								</select>
+								<span>За сколько семестров</span>
+							</label>
+						</div>
+					</div>
+					<button type="submit" class="btn btn--blue btn--uppercase">Отправить заявку</button>
+				</form>
 			</div>
 		</section>
 	 </main>

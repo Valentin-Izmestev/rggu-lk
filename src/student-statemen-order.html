@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<title>Title here</title> 
+   
+<!--   Cascading Style Sheets--> 
+    <!-- <link rel="stylesheet" href="css/style.css">  -->
+    <link rel="stylesheet" href="./local/templates/lka/css/style.min.css">  
+	<noscript>
+		<style> 
+		  .content-wrapper {
+			overflow: auto;
+		  }
+		</style>
+	  </noscript>
+</head>
+<body>
+ 
+     @@include('_header.html')	
+	 <main class="main"> 
+		<section class="typical-section">
+			<div class="inner">
+				<header class="section-header">
+					<h1 class="h1">Отправка заявления</h1> 
+				</header>  
+				<form class="form form-creating-petitions">
+					<label class="form-elem">
+						<select class="form__category-select form__category-select--no-search form__category-select--for-tab" name="type"> 
+							<option value="">This is a placeholder</option>
+							<option value="706298" data-index="0">На оформление дубликата зачетной книжки</option>
+							<option value="706299" data-index="1">На оформление дубликата студенческого билета</option>
+							<option value="706300" data-index="2">На оформление справки о размере стипендии</option> 
+						</select>
+						<span>Выберите тип заявления</span>
+					</label>
+					<div id="706298" class="form-creating-petitions__container"> 
+						<label class="form-elem">
+							<select class="form__category-select form__category-select--no-search form-creating-petitions__reason" name="reason"> 
+								<option value="">This is a placeholder</option>
+								<option value="Утеря">Утеря</option>
+								<option value="Порча">Порча</option>
+								<option value="706300">В связи с изменением персональных данных</option> 
+							</select>
+							<span>Укажите причину</span>
+						</label> 
+					</div>
+					<div id="706299" class="form-creating-petitions__container"> 
+						<label class="form-elem">
+							<select class="form__category-select form__category-select--no-search" name="reason"> 
+								<option value="">This is a placeholder</option>
+								<option value="Утеря">Утеря</option>
+								<option value="Порча">Порча</option>
+								<option value="В связи с изменением персональных данных">В связи с изменением персональных данных</option> 
+							</select>
+							<span>Укажите причину</span>
+						</label> 
+					</div>
+					
+					<div id="706300" class="form-creating-petitions__container">  
+					</div>
+					<button type="submit" class="btn btn--blue btn--uppercase" disabled="disabled">Создать заявление</button>
+				</form>
+			</div>
+		</section>
+	 </main>
+	 @@include('_footer.html')
+	<div class="great-shadow"></div>
+    <!-- ++++++++++JavaScript++++++++++--> 
+	<!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
+     <!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
+     <script src="./local/templates/lka/js/script.js"></script>
+    <!-- ++++++++++JavaScript end++++++++++-->
+</body>
+</html>
+	
+	

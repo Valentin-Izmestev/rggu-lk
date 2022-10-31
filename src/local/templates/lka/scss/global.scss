@@ -100,7 +100,7 @@ address{font-style: normal;}
 section{position:relative;}
 main{position:relative; clear:both; padding-top: 4rem; box-sizing: border-box;}
 header, nav, section, article, aside, footer, main{display:block;}
-fieldset{position: relative; border: 0;}
+fieldset{position: relative; border: 0; padding: 0; margin: 0;}
 legend{
     font-size: 0;
     position: absolute;
@@ -202,3 +202,42 @@ legend{
 .textarea:focus::-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
 .textarea:focus:-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
 .textarea:focus:-ms-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+     color: transparent;
+}
+ :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+     color: transparent;
+}
+ ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+     color: transparent;
+}
+ :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+     color: transparent;
+}
+ input::placeholder {
+     color: transparent;
+}
+ textarea::-webkit-input-placeholder {
+    /* WebKit browsers */
+     color: transparent;
+}
+ textarea:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+     color: transparent;
+}
+ textarea::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+     color: transparent;
+}
+ textarea:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+     color: transparent;
+}
+ textarea::placeholder {
+     color: transparent;
+}

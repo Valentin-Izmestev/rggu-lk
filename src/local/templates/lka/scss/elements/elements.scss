@@ -112,7 +112,7 @@ main.main {
 
     &[disabled="disabled"] {
         color: var(--soft-blue);
-
+        cursor: auto;
         &:active {
             transform: scale(1);
         }
@@ -994,4 +994,19 @@ main.main {
         right: -1px;
         align-self: flex-end; 
     }
+}
+.contacts-item,
+.main .contacts-item{
+    margin-top: 3rem;
+    .contacts-item__caption{
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+    .contacts-item__list{
+        li{
+            &::before{
+                display: none;
+            }
+        }
+    } 
 }

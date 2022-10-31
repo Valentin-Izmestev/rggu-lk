@@ -166,7 +166,23 @@
         })
     }
     
+    // работа таба формы form-ordering-help (страница заказа справки)
+    
+    let $tabRafioBtn = $('.form-ordering-help__radio-js');
+    let $formOrderingHelpContainers = $('.form-ordering-help__container');
+    $tabRafioBtn.on('click', function(){
+        if($(this).is(':checked')){
+            let radioParent = $(this).parents('.fieldset'); 
+            if(!radioParent.hasClass('fieldset--checked')){
+                radioParent.addClass('fieldset--checked');
+                $('.form-ordering-help .btn').show();  
+            }
+            $formOrderingHelpContainers.hide();
+            $formOrderingHelpContainers.eq($tabRafioBtn.index($(this))).show();
 
+            
+        }
+    });
 
  });
   
@@ -233,34 +249,71 @@ let arFormCategory = [];
 let formCategorySelects = document.querySelectorAll('.form__category-select');
 if(formCategorySelects.length > 0){
     formCategorySelects.forEach(select=>{
-        arTableCategory.push(new Choices(select,{ 
-            noResultsText: 'Значение не найдено',
-            loadingText: 'Загрузка...',  
-            // placeholder: false, 
-            placeholder: true,
-            placeholderValue: 'жопа', 
-            searchPlaceholderValue: 'Введите искомое значение', 
-        })); 
-        let thisSelect = select.parentElement.parentElement;
-        
+        let currentSelect;
+        if(select.classList.contains('form__category-select--no-search')){
+            currentSelect = new Choices(select,{ 
+                noResultsText: 'Значение не найдено',
+                loadingText: 'Загрузка...',   
+                placeholder: true,
+                placeholderValue: '', 
+                searchEnabled: false, 
+            });
+        }else{
+            currentSelect = new Choices(select,{ 
+                noResultsText: 'Значение не найдено',
+                loadingText: 'Загрузка...',   
+                placeholder: true,
+                placeholderValue: '', 
+                searchPlaceholderValue: 'Введите искомое значение', 
+            });
+        }
+        arFormCategory.push(currentSelect);
+  
         select.addEventListener('change', function(){
             if(this.value != ''){
                 this.closest('.form-elem').classList.add('form-elem--active'); 
+                 
+                // код для работы таба на странице "Отправка заявления студента" - begin
+                /**смысл работы таба - смотрится, что в value у option, а далее ищется элемент с таким же id и активируется (это в кратце) */
+                if(this.classList.contains('form__category-select--for-tab')){
+                    let thisSelect = this; 
+                    let currentForm = thisSelect.closest('.form-creating-petitions');
+                    let formTabContainers = currentForm.querySelectorAll('.form-creating-petitions__container');
+                    let formSubmit = currentForm.querySelector('.btn[type="submit"]');
+                    formSubmit.removeAttribute('disabled');
+                    formTabContainers.forEach(container=>{
+                        if(container.getAttribute('id') === thisSelect.firstElementChild.getAttribute('value')){
+                            container.style.display = 'block';
+                        }else{
+                            container.removeAttribute('style');
+                        }  
+                    }); 
+                }
+                // код для работы таба на странице "Отправка заявления студента" - end
+                
             } 
         });
         
     });
 } 
 
-// инициализирую поле  с датой 
-let inputDateElem = document.querySelector('.flatpickr');
-if(inputDateElem){
-    flatpickr(inputDateElem, {
-        enableTime: true,
-        dateFormat: 'd.m.Y  H:i:S',
-        time_24hr: true
-    });
-}
+// инициализирую поля  с датой 
+let aeInputDateElem = document.querySelectorAll('.flatpickr');
+aeInputDateElem.forEach(item=>{
+    if(item.classList.contains('flatpickr--no-time')){ 
+        flatpickr(item, {
+            enableTime: false,
+            dateFormat: 'd.m.Y',
+            time_24hr: true
+        });
+    }else{
+        flatpickr(item, {
+            enableTime: true,
+            dateFormat: 'd.m.Y  H:i:S',
+            time_24hr: true
+        }); 
+    }
+});
 
 
 
