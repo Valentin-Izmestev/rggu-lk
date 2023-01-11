@@ -189,16 +189,6 @@
         .choices__list--single{
             padding-left: 0;
         }
-        .choices__list.choices__list--dropdown{
-            .choices__item:first-child{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 1px;
-                height: 1px;
-                overflow: hidden;
-            }
-        }
         .choices__list--dropdown .choices__item--selectable, 
         .choices__list[aria-expanded] .choices__item--selectable{
             padding-right: 3rem;
